@@ -1,6 +1,6 @@
 version: "3"
 services:
-  slack-next-gen-platform-template:
+  slack-nobiru-kun:
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
@@ -8,7 +8,7 @@ services:
         WORKDIR: /project
     volumes:
       - ..:/project
-    image: slack-next-gen-platform-template-image
-    container_name: slack-next-gen-platform-template
+    image: slack-nobiru-kun-image
+    container_name: slack-nobiru-kun
     tty: true
     env_file: ../.env
