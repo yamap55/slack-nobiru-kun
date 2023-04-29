@@ -1,8 +1,16 @@
-# slack-next-gen-platform-template
+# slack-nobiru-kun
 
 ## 概要
 
-本リポジトリはSlackの次世代プラットフォーム機能を使用したアプリケーション開発環境のテンプレートリポジトリです。devcontainerの設定をしていますので、VS CodeとDocker、Gitさえあれば各種開発設定済みの開発環境が構築され即時開発可能となっています。GitHubのリポジトリページの「Use this template」を押下して使用してください。
+Slackの既定チャンネルで誰かを褒めると一緒に褒めてくれるアプリケーションです
+
+## 環境情報
+
+- Slackの次世代プラットフォーム機能
+
+----
+
+以下は未更新
 
 ## 使用方法
 
