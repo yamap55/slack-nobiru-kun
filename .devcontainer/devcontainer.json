@@ -1,11 +1,11 @@
 // ref. https://github.com/Microsoft/vscode-remote-try-python
 {
-  "name": "slack-next-gen-platform-template",
+  "name": "slack-nobiru-kun",
   // Use docker-compose.extend.yml to run a command that keeps the container running.
   "dockerComposeFile": [
     "./docker-compose.yml"
   ],
-  "service": "slack-next-gen-platform-template",
+  "service": "slack-nobiru-kun",
   "workspaceFolder": "/project",
   "shutdownAction": "stopCompose",
   // Use 'settings' to set *default* container specific settings.json values on container create.
@@ -16,7 +16,8 @@
         "cSpell.words": [
           "deno",
           "devcontainer",
-          "denoland"
+          "denoland",
+          "nobiru"
         ],
         "deno.enable": true,
         "deno.lint": true,
