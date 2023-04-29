@@ -2,7 +2,10 @@
 
 ## 概要
 
-Slackの既定チャンネルで誰かを褒めると一緒に褒めてくれるアプリケーションです
+Slackの既定チャンネルで誰かを褒めると一緒に褒めてくれるアプリケーションです。
+
+以下のリポジトリにインスパイヤされました。（Inspired by the following repositories）
+https://github.com/yamazaki-seiya/nobiru_kun
 
 ## 環境情報
 
