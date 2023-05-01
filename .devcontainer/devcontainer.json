@@ -59,8 +59,7 @@
         "VisualStudioExptTeam.vscodeintellicode",
         "exiasr.hadolint",
         "usernamehw.errorlens",
-        "streetsidesoftware.code-spell-checker",
-        "GitHub.copilot"
+        "streetsidesoftware.code-spell-checker"
       ]
     }
   }
