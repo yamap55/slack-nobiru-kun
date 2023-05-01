@@ -1,5 +1,8 @@
 {
   "importMap": "import_map.json",
+  "tasks": {
+    "test": "deno fmt --check && deno lint && deno test --allow-read --allow-none"
+  },
   "fmt": {
     "files": {
       "exclude": ["README.md"]
