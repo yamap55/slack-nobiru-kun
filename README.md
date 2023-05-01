@@ -11,6 +11,15 @@ https://github.com/yamazaki-seiya/nobiru_kun
 
 - Slackの次世代プラットフォーム機能
 
+
+## 環境変数
+
+| environmental variables | value |
+|---|---|
+| OPENAI_API_KEY | [OpenAPIから取得](https://platform.openai.com/account/api-keys) |
+
+リポジトリ直下に `.env` という名称でファイルを作成し、これらを記載する
+
 ----
 
 以下は未更新

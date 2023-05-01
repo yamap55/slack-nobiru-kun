@@ -2,9 +2,7 @@
 {
   "name": "slack-nobiru-kun",
   // Use docker-compose.extend.yml to run a command that keeps the container running.
-  "dockerComposeFile": [
-    "./docker-compose.yml"
-  ],
+  "dockerComposeFile": ["./docker-compose.yml"],
   "service": "slack-nobiru-kun",
   "workspaceFolder": "/project",
   "shutdownAction": "stopCompose",
@@ -17,7 +15,10 @@
           "deno",
           "devcontainer",
           "denoland",
-          "nobiru"
+          "nobiru",
+          "openai",
+          "OPENAI",
+          "ratelimit"
         ],
         "deno.enable": true,
         "deno.lint": true,
