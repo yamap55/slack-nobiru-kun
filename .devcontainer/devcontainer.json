@@ -18,7 +18,8 @@
           "nobiru",
           "openai",
           "OPENAI",
-          "ratelimit"
+          "ratelimit",
+          "davinci"
         ],
         "deno.enable": true,
         "deno.lint": true,
