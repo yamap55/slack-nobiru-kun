@@ -1,3 +1,4 @@
+// deno run --allow-all ./sample/openai.ts
 import { config } from "https://deno.land/x/dotenv@v3.2.2/mod.ts";
 import { Configuration, OpenAIApi } from "npm:openai";
 
