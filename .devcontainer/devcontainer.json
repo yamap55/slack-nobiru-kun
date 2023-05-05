@@ -19,7 +19,8 @@
           "openai",
           "OPENAI",
           "ratelimit",
-          "davinci"
+          "davinci",
+          "tada"
         ],
         "deno.enable": true,
         "deno.lint": true,
