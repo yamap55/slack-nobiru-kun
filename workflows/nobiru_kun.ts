@@ -32,8 +32,7 @@ const create_response_message = NotifyWorkflow.addStep(CreateResponseMessageFunc
 
 NotifyWorkflow.addStep(Schema.slack.functions.SendMessage, {
   channel_id: target_channel_id.outputs.target_channel_id,
-  message:
-    `<@${NotifyWorkflow.inputs.user_id}>\n${create_response_message.outputs.response_message}`,
+  message: create_response_message.outputs.response_message,
 });
 
 export default NotifyWorkflow;
