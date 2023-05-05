@@ -1,8 +1,5 @@
 import { Trigger } from "deno-slack-api/types.ts";
-import { config } from "https://deno.land/x/dotenv@v3.2.2/mod.ts";
 import NotifyWorkflow from "../workflows/nobiru_kun.ts";
-
-const { TARGET_CHANNEL_ID } = config();
 
 const trigger: Trigger<typeof NotifyWorkflow.definition> = {
   type: "event",
@@ -10,7 +7,7 @@ const trigger: Trigger<typeof NotifyWorkflow.definition> = {
   workflow: `#/workflows/${NotifyWorkflow.definition.callback_id}`,
   event: {
     event_type: "slack#/events/message_posted",
-    channel_ids: [TARGET_CHANNEL_ID],
+    channel_ids: ["C04H8294NUB"],
     // filterは必須
     filter: {
       version: 1,
@@ -19,11 +16,7 @@ const trigger: Trigger<typeof NotifyWorkflow.definition> = {
   },
   inputs: {
     channel_id: { value: "{{data.channel_id}}" },
-    channel_type: { value: "{{data.channel_type}}" },
-    user_id: { value: "{{data.user_id}}" },
     text: { value: "{{data.text}}" },
-    message_ts: { value: "{{data.message_ts}}" },
-    data: { value: "{{data}}" },
   },
 };
 
