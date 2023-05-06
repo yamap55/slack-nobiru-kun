@@ -1,5 +1,6 @@
 import { DefineFunction, Schema, SlackFunction } from "deno-slack-sdk/mod.ts";
 import { getEmoji, getMessage } from "../resources/mod.ts";
+import { extractUserMatch } from "../utils/slack_message.ts";
 
 const createMessage = (
   input_text: string,
@@ -8,16 +9,13 @@ const createMessage = (
   return `${user} ${getMessage()}${getEmoji()}`;
 };
 
-/** SlackのユーザーIDフォーマットを抽出する正規表現パターン */
-const SLACK_USER_ID_REGEX = /(<@\w+>)/;
-
 /**
  * メッセージから褒められたユーザーのIDを取得する
  * @param text 対象のメッセージ
  * @returns ユーザーID（ <@U0476GKM8TW> というフォーマット）
  */
 const getPraisedUser = (text: string): string => {
-  const match = text.split("\n")[1].match(SLACK_USER_ID_REGEX);
+  const match = extractUserMatch(text.split("\n")[1]);
   return match ? match[1] : "";
 };
 
