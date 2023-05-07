@@ -8,7 +8,7 @@ import NotifyWorkflow from "./workflows/nobiru_kun.ts";
  */
 export default Manifest({
   name: "slack-nobiru-kun",
-  description: "A blank template for building Slack apps with Deno",
+  description: "誰かを褒めると粋なひとことコメントを返すbot",
   icon: "assets/animal_smile_neko.png",
   functions: [],
   workflows: [NotifyWorkflow],
