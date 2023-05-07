@@ -30,6 +30,10 @@ export const CreateResponseMessageFunction = DefineFunction({
         type: Schema.types.string,
         description: "Input Text",
       },
+      continue_flag: {
+        type: Schema.types.boolean,
+        description: "Continue Flag",
+      },
     },
     required: ["input_text"],
   },
@@ -45,6 +49,6 @@ export const CreateResponseMessageFunction = DefineFunction({
 });
 
 export default SlackFunction(CreateResponseMessageFunction, ({ inputs }) => {
-  const response_message = createMessage(inputs.input_text);
+  const response_message = inputs.continue_flag ? createMessage(inputs.input_text) : "";
   return { outputs: { response_message } };
 });
