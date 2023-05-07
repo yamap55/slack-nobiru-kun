@@ -7,7 +7,8 @@ const trigger: Trigger<typeof NotifyWorkflow.definition> = {
   workflow: `#/workflows/${NotifyWorkflow.definition.callback_id}`,
   event: {
     event_type: "slack#/events/message_posted",
-    channel_ids: ["C04H8294NUB"],
+    // channel_ids: ["C04H8294NUB"], // テスト用のチャンネル
+    channel_ids: ["C04L0R10X1C"], // 本番稼働用のチャンネル
     // filterは必須
     filter: {
       version: 1,
