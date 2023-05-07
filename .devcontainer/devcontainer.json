@@ -20,7 +20,8 @@
           "OPENAI",
           "ratelimit",
           "davinci",
-          "tada"
+          "tada",
+          "neko"
         ],
         "deno.enable": true,
         "deno.lint": true,
